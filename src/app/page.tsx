@@ -3,7 +3,7 @@
 import { useTheme } from "@/context/ThemeContext";
 import Image from "next/image";
 import Link from "next/link";
-import ProfilePic from "../../public/prof_pic-480.webp";
+import ProfilePic from "../../public/profile_pic.jpg";
 import {
   FaEnvelope,
   FaGithub,
