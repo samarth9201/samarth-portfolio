@@ -32,7 +32,7 @@ const News = () => {
         }, index * 200); // Staggered delay for each item
       });
     };
-
+    document.title = "News | Samarth Bhadane";
     fetchData();
   }, []);
 

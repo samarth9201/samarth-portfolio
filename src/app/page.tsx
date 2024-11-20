@@ -11,9 +11,14 @@ import {
   FaLinkedin,
   FaTwitter,
 } from "react-icons/fa";
+import { useEffect } from "react";
 
 export default function Home() {
   const { colors } = useTheme();
+
+  useEffect(() =>{
+    document.title = "About Me | Samarth Bhadane"
+  })
 
   return (
     <div

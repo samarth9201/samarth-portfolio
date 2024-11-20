@@ -40,7 +40,7 @@ const Projects = () => {
         }, index * 200);
       });
     };
-
+    document.title = "Projects | Samarth Bhadane";
     fetchData();
   }, []);
 
