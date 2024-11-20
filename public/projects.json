@@ -1,0 +1,88 @@
+[
+  {
+    "title": "Feed Amalgamator",
+    "description": "Developed a news aggregation platform with advanced search and categorization features.",
+    "technologies": [
+      "React",
+      "Node.js",
+      "Flask",
+      "SQL",
+      "JavaScript/TypeScript",
+      "Python"
+    ],
+    "domain": "Web Development",
+    "start": "Sept 2023",
+    "end": "Dec 2023",
+    "github_repo": "https://github.com/samarth9201/Feed-Amalgamator",
+    "image": "/bugs_bunny_mastodon.jpeg",
+    "moreDetails": "Integrated multiple news APIs to provide real-time updates. Implemented user-specific preferences for personalized news feeds and a responsive UI for seamless cross-device usage."
+  },
+  {
+    "title": "Automatic CI/CD Pipeline Generator",
+    "description": "CLI tool to parse repositories and generate CI/CD template based on tech stack detected.",
+    "technologies": [
+      "Go",
+      "Node.js",
+      "JavaScript/TypeScript",
+      "Python",
+      "GitHub Actions"
+    ],
+    "domain": "DevOps",
+    "start": "Nov 2024",
+    "end": "Present",
+    "github_repo": "https://github.com/samarth9201/ci-cd-generator",
+    "image": "/CICD Generator.png",
+    "moreDetails": "Automates pipeline creation for faster project setup, supports integration with GitHub Actions, and provides modular templates for various frameworks. Includes built-in security checks."
+  },
+  {
+    "title": "CloudSync : Distributed Dropbox Clone",
+    "description": "Fault-tolerant distributed system for syncing files across multiple devices.",
+    "technologies": ["Go", "gRPC", "Docker"],
+    "domain": "Distributed Systems",
+    "start": "Dec 2022",
+    "end": "March 2023",
+    "github_repo": "https://github.com/samarth9201/CloudSync",
+    "image": "/CloudSync-Architecture.png",
+    "moreDetails": "Implemented a distributed architecture with replication and consistency guarantees using Raft protocol. Designed for low-latency file syncing and seamless recovery from node failures."
+  },
+  {
+    "title": "AutoBot",
+    "description": "Autonomous Four-Wheel Drive.",
+    "technologies": [
+      "Python",
+      "ROS",
+      "Lidar",
+      "Computer Vision",
+      "Deep Learning",
+      "Extended Kalman Filter"
+    ],
+    "domain": "Robotics",
+    "start": "Sept 2022",
+    "end": "Dec 2022",
+    "github_repo": "https://github.com/samarth9201/AutoBot",
+    "image": "/Roomba.png",
+    "moreDetails": "Developed SLAM-based navigation for precise pathfinding. Used Lidar data for obstacle detection and avoidance. Deployed real-time control algorithms for autonomous driving in indoor environments."
+  },
+  {
+    "title": "Quantum Gate Synthesis with Reinforcement Learning",
+    "description": "Using Reinforcement Learning for Quantum Gate Synthesis.",
+    "technologies": ["Python", "TensorFlow", "Qiskit"],
+    "domain": "Quantum Computing",
+    "start": "Jan 2024",
+    "end": "March 2024",
+    "doc_link": "https://drive.google.com/file/d/1OvlcS_aP09QbTAxLMi5rCTGuOIicBHVm/view",
+    "image": "/two_qubit_5.png",
+    "moreDetails": "Trained reinforcement learning agents to optimize quantum gate sequences, achieving high fidelity for two-qubit systems. Results validated using IBM Quantum simulators."
+  },
+  {
+    "title": "TritonHTTP",
+    "description": "Personalized implementation of the HTTP Protocol.",
+    "technologies": ["Go", "HTTP", "Socket Programming", "Multithreading"],
+    "domain": "Networking",
+    "start": "Jan 2023",
+    "end": "March 2023",
+    "github_repo": "https://github.com/samarth9201/TritonHTTP",
+    "image": "/TritonHTTP.jpg",
+    "moreDetails": "Created a multi-threaded HTTP server supporting GET and POST requests with proper concurrency management. Enhanced server performance through optimized socket handling."
+  }
+]
