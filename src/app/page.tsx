@@ -108,7 +108,7 @@ export default function Home() {
       <div className="w-full max-w-4xl mx-auto mt-16 text-center text-xl">
         <div className="flex justify-center space-x-4">
           <Link
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/samarthbhadane"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -118,7 +118,7 @@ export default function Home() {
             />
           </Link>
           <Link
-            href="https://github.com/"
+            href="https://github.com/samarth9201"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -131,7 +131,7 @@ export default function Home() {
             />
           </Link>
           <Link
-            href="https://twitter.com/"
+            href="https://x.com/samarth9201"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -141,7 +141,7 @@ export default function Home() {
             />
           </Link>
           <Link
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/samarthbhadane/"
             target="_blank"
             rel="noopener noreferrer"
           >
