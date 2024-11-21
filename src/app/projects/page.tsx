@@ -6,6 +6,7 @@ import { useTheme } from "@/context/ThemeContext";
 import Image from "next/image";
 import { FiGithub, FiFileText } from "react-icons/fi"; // Import GitHub and Docs icons
 import Modal from "@/components/Modal"; // Assume you have a reusable Modal component
+import { FaYoutube } from "react-icons/fa";
 
 interface ProjectItem {
   title: string;
@@ -14,6 +15,7 @@ interface ProjectItem {
   technologies: string[];
   github_repo?: string;
   doc_link?: string;
+  video_link ?: string,
   image: string;
   start: string; // Updated to use start and end dates
   end: string;
@@ -199,6 +201,16 @@ const Projects = () => {
                   <FiFileText />
                 </a>
               )}
+              {project.video_link && (
+                <a
+                  href={project.video_link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-red-500 text-2xl hover:text-red-600 transition"
+                >
+                  <FaYoutube />
+                </a>
+              )}
             </div>
           </div>
         ))}
@@ -302,6 +314,16 @@ const Projects = () => {
                       className="text-green-500 text-2xl hover:underline"
                     >
                       <FiFileText />
+                    </a>
+                  )}
+                  {modalProject.video_link && (
+                    <a
+                      href={modalProject.video_link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-red-500 text-2xl hover:underline"
+                    >
+                      <FaYoutube />
                     </a>
                   )}
                 </div>

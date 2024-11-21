@@ -18,7 +18,7 @@
     "moreDetails": "Integrated multiple news APIs to provide real-time updates. Implemented user-specific preferences for personalized news feeds and a responsive UI for seamless cross-device usage."
   },
   {
-    "title": "Automatic CI/CD Pipeline Generator",
+    "title": "Automatic CI/CD Pipeline Generator (WIP)",
     "description": "CLI tool to parse repositories and generate CI/CD template based on tech stack detected.",
     "technologies": [
       "Go",
@@ -59,7 +59,7 @@
     "domain": "Robotics",
     "start": "Sept 2022",
     "end": "Dec 2022",
-    "github_repo": "https://github.com/samarth9201/AutoBot",
+    "video_link": "https://youtu.be/C6VU2g32pOI",
     "image": "/Roomba.png",
     "moreDetails": "Developed SLAM-based navigation for precise pathfinding. Used Lidar data for obstacle detection and avoidance. Deployed real-time control algorithms for autonomous driving in indoor environments."
   },
