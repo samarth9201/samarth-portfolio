@@ -31,7 +31,7 @@ const Projects = () => {
   const [modalProject, setModalProject] = useState<ProjectItem | null>(null);
   const [searchTerm, setSearchTerm] = useState("");
   const [modalMarkdown, setModalMarkdown] = useState<string>("");
-  const [sortOrder, setSortOrder] = useState<"asc" | "desc">("asc");
+  const [sortOrder, setSortOrder] = useState<"asc" | "desc">("desc");
 
   useEffect(() => {
     const fetchData = async () => {
@@ -116,11 +116,11 @@ const Projects = () => {
           value={sortOrder}
           onChange={(e) => setSortOrder(e.target.value as "asc" | "desc")}
         >
-          <option value="asc" style={{ color: colors.text }}>
-            Sort by Start Date (Asc)
-          </option>
           <option value="desc" style={{ color: colors.text }}>
-            Sort by Start Date (Desc)
+            Sort by Date (Latest First)
+          </option>
+          <option value="asc" style={{ color: colors.text }}>
+            Sort by Date (Oldest First)
           </option>
         </select>
       </div>
