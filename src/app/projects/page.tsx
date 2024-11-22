@@ -7,6 +7,7 @@ import Image from "next/image";
 import { FiGithub, FiFileText } from "react-icons/fi"; // Import GitHub and Docs icons
 import Modal from "@/components/Modal"; // Assume you have a reusable Modal component
 import { FaYoutube } from "react-icons/fa";
+import MarkdownRenderer from "@/components/MarkdownRenderer";
 
 interface ProjectItem {
   title: string;
@@ -15,11 +16,12 @@ interface ProjectItem {
   technologies: string[];
   github_repo?: string;
   doc_link?: string;
-  video_link ?: string,
+  video_link?: string;
   image: string;
-  start: string; // Updated to use start and end dates
+  start: string;
   end: string;
-  moreDetails: string;
+  moreDetails: string,
+  hideImageInModal?: boolean;
 }
 
 const Projects = () => {
@@ -225,7 +227,7 @@ const Projects = () => {
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
               {/* Left Column: Image */}
-              <div className="col-span-1">
+              {!modalProject.hideImageInModal && <div className="col-span-1">
                 <div className="relative w-full h-64 lg:h-full">
                   <Image
                     src={modalProject.image}
@@ -235,7 +237,7 @@ const Projects = () => {
                     className="rounded-lg shadow-md"
                   />
                 </div>
-              </div>
+              </div>}
 
               {/* Right Column: Details */}
               <div className="col-span-2 flex flex-col justify-between">
@@ -258,7 +260,8 @@ const Projects = () => {
                       </div>
                       <div>
                         <p className="text-sm">
-                          <strong>Duration:</strong> {modalProject.start} - {modalProject.end}
+                          <strong>Duration:</strong> {modalProject.start} -{" "}
+                          {modalProject.end}
                         </p>
                       </div>
                     </div>
@@ -283,13 +286,13 @@ const Projects = () => {
 
                   {/* More Details Section */}
                   {modalProject.moreDetails && (
-                    <div className="mb-6">
+                    <div className="mb-6 m-4">
                       <h3 className="text-xl font-semibold mb-2">
                         More Details
                       </h3>
-                      <p className="text-sm" style={{ color: colors.text }}>
-                        {modalProject.moreDetails}
-                      </p>
+                      <div className="text-sm" style={{ color: colors.text }}>
+                        <MarkdownRenderer markdown={modalProject.moreDetails} />
+                      </div>
                     </div>
                   )}
                 </div>

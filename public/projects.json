@@ -1,7 +1,7 @@
 [
   {
     "title": "Feed Amalgamator",
-    "description": "Developed a news aggregation platform with advanced search and categorization features.",
+    "description": "Unified Mastodon feed aggregator.",
     "technologies": [
       "React",
       "Node.js",
@@ -15,7 +15,7 @@
     "end": "Dec 2023",
     "github_repo": "https://github.com/samarth9201/Feed-Amalgamator",
     "image": "/bugs_bunny_mastodon.jpeg",
-    "moreDetails": "Integrated multiple news APIs to provide real-time updates. Implemented user-specific preferences for personalized news feeds and a responsive UI for seamless cross-device usage."
+    "moreDetails": "Feed Amalgamator is a revolutionary platform designed to simplify and enhance your Mastodon usage. If you're tired of juggling multiple accounts across different Mastodon server instances, look no further. Our application empowers users to link various Mastodon accounts seamlessly, creating a unified feed for a more streamlined and enjoyable social media experience."
   },
   {
     "title": "Automatic CI/CD Pipeline Generator (WIP)",
@@ -42,8 +42,9 @@
     "start": "Dec 2022",
     "end": "March 2023",
     "github_repo": "https://github.com/samarth9201/CloudSync",
+    "hideImageInModal": "true",
     "image": "/CloudSync-Architecture.png",
-    "moreDetails": "Implemented a distributed architecture with replication and consistency guarantees using Raft protocol. Designed for low-latency file syncing and seamless recovery from node failures."
+    "moreDetails": "<p>\nCloudSync is a networked file storage application that is based on Dropbox, and lets you sync files to and from the “cloud”. The project involved the development of a fault-tolerant distributed system designed to synchronize files across multiple clients, utilizing the power of <a href=\"https://go.dev/\">Go</a> and the efficiency of the <a href=\"https://grpc.io/\">gRPC</a> protocol. Leveraging a scalable architecture, the system was engineered with a robust fault-tolerant mechanism inspired by the <a href=\"https://raft.github.io/\">RAFT consensus</a> system, which guaranteed continuous operation even in the event of server crashes. Through meticulous testing and debugging phases, the team ensured the reliability and efficiency of the solution, successfully enabling it to handle concurrent file operations from numerous clients simultaneously. The end result was a resilient and efficient file syncing system capable of seamlessly managing data transfer across distributed networks with minimal downtime or disruptions.\n</p>\n\n<div class=\"row\" style=\"display: flex; flex-direction: row; margin-top: 1rem;\">\n  <div class=\"col-sm mt-3 mt-md-0\" style=\"margin-top: 1rem; max-width: 100%;\">\n    <img src=\"/CloudSync-Architecture.png\" alt=\"CloudSync Architecture\" class=\"img-fluid rounded\" style=\"border-radius: 0.25rem; max-width: 100%; height: auto;\" />\n  </div>\n</div>\n<div class=\"caption\" style=\"text-align: center; font-size: 0.875rem; color: #6c757d;\">\n  Architecture of CloudSync\n</div>\n\n<p>The CloudSync service is composed of the following two services:</p>\n\n<ul style=\"list-style-type: disc; padding-left: 2rem;\">\n  <li>\n    <strong>BlockStore</strong>: The content of each file in CloudSync is divided up into chunks, or blocks, each of which has a unique identifier. This service stores these blocks, and when given an identifier, retrieves and returns the appropriate block.\n  </li>\n  <li>\n    <strong>MetaStore</strong>: The MetaStore service manages the metadata of files and the entire system. Most importantly, the MetaStore service holds the mapping of filenames to blocks. Furthermore, it should be aware of available BlockStores and map blocks to particular BlockStores. In a real deployment, a cloud file service like Dropbox or Google Drive will hold exabytes of data, and so will require tens of thousands of BlockStores or more to hold all that data.\n  </li>\n</ul>\n\n<p>\nIn CloudSync, we have implemented Fault-Tolerant Consensus Algorithm called <a href=\"https://raft.github.io/\">RAFT protocol</a>. Because data blocks are immutable and cannot be updated (since doing so would change their hash values, and thus they’d become entirely new blocks), replicating blocks is quite easy. On the other hand, replicating the MetaStore service is quite challenging, because multiple clients can update the Metadata of a file in a concurrent manner. To ensure that the Metadata store is fault tolerant and stays consistent regardless of failures, we have implemented it as a replicated state machine design.\n</p>"
   },
   {
     "title": "AutoBot",
@@ -61,7 +62,7 @@
     "end": "Dec 2022",
     "video_link": "https://youtu.be/C6VU2g32pOI",
     "image": "/Roomba.png",
-    "moreDetails": "Developed SLAM-based navigation for precise pathfinding. Used Lidar data for obstacle detection and avoidance. Deployed real-time control algorithms for autonomous driving in indoor environments."
+    "moreDetails": "The robot leveraged computer vision and deep learning for landmark detection, allowing for accurate pose estimation within indoor environments. This facilitated completely autonomous navigation between waypoints while avoiding obstacles. Additionally, an Extended Kalman Filter algorithm was implemented for Simultaneous Localization and Mapping (SLAM) to continuously improve the robot's awareness of its surroundings and build maps for navigation. \n\n<div class=\"row\">\n  <div class=\"col-sm mt-3 mt-md-0\">\n    <iframe src=\"https://www.youtube.com/embed/C6VU2g32pOI?si=zQZOvPlNbkhyjqw8\" class=\"img-fluid rounded z-depth-1\" width=\"380\" height=\"198\" allowfullscreen></iframe>\n  </div>\n</div>"
   },
   {
     "title": "Quantum Gate Synthesis with Reinforcement Learning",
@@ -72,7 +73,7 @@
     "end": "March 2024",
     "doc_link": "https://drive.google.com/file/d/1OvlcS_aP09QbTAxLMi5rCTGuOIicBHVm/view",
     "image": "/two_qubit_5.png",
-    "moreDetails": "Trained reinforcement learning agents to optimize quantum gate sequences, achieving high fidelity for two-qubit systems. Results validated using IBM Quantum simulators."
+    "moreDetails": "We extend the 1-qubit gate synthesis results of Quantum logic gate synthesis as a Markov decision process to multi-qubit systems. We show that the policy iteration Reinforcement Learning (RL) approach used by Alam et al. does not scale to multi-qubit systems, and demonstrate the effectiveness of a different RL technique, Proximal Policy Optimization (PPO) at single and multi-qubit gate synthesis."
   },
   {
     "title": "TritonHTTP",
@@ -83,6 +84,6 @@
     "end": "March 2023",
     "github_repo": "https://github.com/samarth9201/TritonHTTP",
     "image": "/TritonHTTP.jpg",
-    "moreDetails": "Created a multi-threaded HTTP server supporting GET and POST requests with proper concurrency management. Enhanced server performance through optimized socket handling."
+    "moreDetails": "<h3><b>Key Features:</b></h3>\n<ol style='list-style-type:decimal;'>\n<li><strong><a href=\"https://www.w3.org/Protocols/HTTP/1.1/draft-ietf-http-v11-spec-01\">HTTP/1.1 Protocol Implementation</a></strong>:<br />\nTritonHTTP adheres to a minimal subset of the HTTP/1.1 protocol specification, supporting essential features such as request/response exchanges, header parsing, and status code handling.</li>\n<li><strong><a href=\"https://en.wikipedia.org/wiki/HTTP_persistent_connection\">HTTP Persistent Connections</a></strong>:<br />\nTritonHTTP supports HTTP persistent connections, enabling clients to reuse TCP connections for multiple request/response interactions. This helps reduce the overhead of establishing new connections for each request.</li>\n<li><strong><a href=\"https://en.wikipedia.org/wiki/Virtual_hosting\">Virtual Hosting</a></strong>:<br />\nThe project implements virtual hosting, allowing multiple web servers to be hosted on a single physical machine. Each server is associated with a unique host name and document root directory, enabling the server to serve content based on the \"Host\" header in the client's request.</li>\n<li><strong><a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Status\">Error Handling</a></strong>:<br />\nTritonHTTP includes robust error handling mechanisms to deal with malformed or invalid client requests. It responds with appropriate HTTP status codes, such as 400 Bad Request and 404 Not Found, to indicate errors to the client.</li>\n</ol>"
   }
 ]
