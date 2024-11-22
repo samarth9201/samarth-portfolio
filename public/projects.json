@@ -18,30 +18,12 @@
     "detailsFilePath": "/ProjectDetails/feed-amalgamator.md"
   },
   {
-    "title": "Automatic CI/CD Pipeline Generator (WIP)",
-    "description": "CLI tool to parse repositories and generate CI/CD template based on tech stack detected.",
-    "technologies": [
-      "Go",
-      "Node.js",
-      "JavaScript/TypeScript",
-      "Python",
-      "GitHub Actions"
-    ],
-    "domain": "DevOps",
-    "start": "Nov 2024",
-    "end": "Present",
-    "github_repo": "https://github.com/samarth9201/ci-cd-generator",
-    "image": "/CICD Generator.png",
-    "detailsFilePath": "/ProjectDetails/automatic-cicd.md"
-  },
-  {
     "title": "CloudSync : Distributed Dropbox Clone",
     "description": "Fault-tolerant distributed system for syncing files across multiple devices.",
     "technologies": ["Go", "gRPC", "Docker"],
     "domain": "Distributed Systems",
     "start": "Dec 2022",
     "end": "March 2023",
-    "github_repo": "https://github.com/samarth9201/CloudSync",
     "hideImageInModal": "true",
     "image": "/CloudSync-Architecture.png",
     "detailsFilePath": "/ProjectDetails/cloudsync.md"
@@ -67,7 +49,7 @@
   {
     "title": "Quantum Gate Synthesis with Reinforcement Learning",
     "description": "Using Reinforcement Learning for Quantum Gate Synthesis.",
-    "technologies": ["Python", "TensorFlow", "Qiskit"],
+    "technologies": ["Python", "Research", "PyTorch", "Qiskit"],
     "domain": "Quantum Computing",
     "start": "Jan 2024",
     "end": "March 2024",
@@ -85,5 +67,60 @@
     "github_repo": "https://github.com/samarth9201/TritonHTTP",
     "image": "/TritonHTTP.jpg",
     "detailsFilePath": "/ProjectDetails/tritonhttp.md"
+  },
+  {
+    "title": "Branch Predictor",
+    "description": "Designing and Implementing Branch Predictors for High-Performance Computing",
+    "technologies": [
+      "C",
+      "Operating Systems",
+      "Algorithm Design",
+      "Performance Optimization"
+    ],
+    "domain": "Computer Architecture",
+    "start": "March 2024",
+    "end": "June 2024",
+    "github_repo": "https://github.com/samarth9201/branch-predictor",
+    "image": "/BranchPredictor.png",
+    "detailsFilePath": "/ProjectDetails/branchpredictors.md"
+  },
+  {
+    "title": "Security Properties of Vector Databases",
+    "description": "Survey of techniques and challenges for securing vector databases on untrusted clouds.",
+    "technologies": [
+      "Python",
+      "Research",
+      "Cryptography",
+      "VectorDB",
+      "Threat Modeling"
+    ],
+    "domain": "Computer Security",
+    "start": "Sept 2023",
+    "end": "Dec 2023",
+    "doc_link": "https://drive.google.com/file/d/1TRjd8y0vOBgPzyuNJ8AkUD0kdmhGCTXg/view",
+    "image": "/ALE_vdb.png",
+    "detailsFilePath": "/ProjectDetails/security-vdb.md"
+  },
+  {
+    "title": "CryptoAcres",
+    "description": "Blockchain based P2P Real Estate Marketplace",
+    "technologies": ["React", "MongoDB", "Node.js", "JavaScript/TypeScript", "Polygon", "Solidity", "HardHat"],
+    "domain": "Blockchain / Web Development",
+    "start": "Dec 2021",
+    "end": "May 2022",
+    "github_repo": "https://github.com/samarth9201/cryptoacres",
+    "image": "/nft-img.png",
+    "detailsFilePath": "/ProjectDetails/cryptoacres.md"
+  },
+  {
+    "title": "NoteFlix",
+    "description": "Decentralized music streaming application",
+    "technologies": ["React", "MongoDB", "IPFS", "Node.js", "JavaScript/TypeScript", "Polygon", "Solidity", "HardHat"],
+    "domain": "Blockchain / Web Development",
+    "start": "Dec 2020",
+    "end": "Feb 2021",
+    "github_repo": "https://github.com/samarth9201/NoteFlix",
+    "image": "/Noteflix.png",
+    "detailsFilePath": "/ProjectDetails/noteflix.md"
   }
 ]

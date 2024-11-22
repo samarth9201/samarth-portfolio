@@ -1,0 +1,19 @@
+[
+    {
+        "title": "Automatic CI/CD Pipeline Generator (WIP)",
+        "description": "CLI tool to parse repositories and generate CI/CD template based on tech stack detected.",
+        "technologies": [
+          "Go",
+          "Node.js",
+          "JavaScript/TypeScript",
+          "Python",
+          "GitHub Actions"
+        ],
+        "domain": "DevOps",
+        "start": "Nov 2024",
+        "end": "Present",
+        "github_repo": "https://github.com/samarth9201/ci-cd-generator",
+        "image": "/CICD Generator.png",
+        "detailsFilePath": "/ProjectDetails/automatic-cicd.md"
+      }
+]

@@ -37,10 +37,23 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 2rem;
 }
 
-.markdown-container li{
-  margin-bottom: 1rem;
-}
-
 .markdown-container p{
   margin-bottom: 0.5rem;
+}
+
+.markdown-container h2{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+.markdown-container li{
+  margin-left: 20px;
+}
+
+.markdown-container ul ul li, 
+.markdown-container ol ul li, 
+.markdown-container ul ol li, 
+.markdown-container ol ol li {
+  margin-left: 20px /* Indent nested lists */
 }
