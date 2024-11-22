@@ -20,7 +20,7 @@ interface ProjectItem {
   image: string;
   start: string;
   end: string;
-  moreDetails: string,
+  detailsFilePath: string,
   hideImageInModal?: boolean;
 }
 
@@ -30,6 +30,7 @@ const Projects = () => {
   const { colors } = useTheme();
   const [modalProject, setModalProject] = useState<ProjectItem | null>(null);
   const [searchTerm, setSearchTerm] = useState("");
+  const [modalMarkdown, setModalMarkdown] = useState<string>("");
   const [sortOrder, setSortOrder] = useState<"asc" | "desc">("asc");
 
   useEffect(() => {
@@ -47,6 +48,20 @@ const Projects = () => {
     document.title = "Projects | Samarth Bhadane";
     fetchData();
   }, []);
+
+  const handleModalOpen = async (project: ProjectItem) => {
+    setModalProject(project);
+    if (project.detailsFilePath) {
+      try {
+        const res = await fetch(project.detailsFilePath);
+        const markdown = await res.text();
+        setModalMarkdown(markdown);
+      } catch (error) {
+        console.error("Error fetching details:", error);
+        setModalMarkdown("Details could not be loaded.");
+      }
+    }
+  };
 
   const filteredProjects = projects
     .filter(
@@ -175,7 +190,7 @@ const Projects = () => {
               <button
                 onClick={(e) => {
                   e.stopPropagation(); // Prevent modal opening on button click
-                  setModalProject(project);
+                  handleModalOpen(project);
                 }}
                 className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
               >
@@ -285,13 +300,13 @@ const Projects = () => {
                   </div>
 
                   {/* More Details Section */}
-                  {modalProject.moreDetails && (
+                  {modalMarkdown && (
                     <div className="mb-6 m-4">
                       <h3 className="text-xl font-semibold mb-2">
                         More Details
                       </h3>
                       <div className="text-sm" style={{ color: colors.text }}>
-                        <MarkdownRenderer markdown={modalProject.moreDetails} />
+                        <MarkdownRenderer markdown={modalMarkdown} />
                       </div>
                     </div>
                   )}

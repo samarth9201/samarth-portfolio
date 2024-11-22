@@ -1,0 +1,1 @@
+Automates pipeline creation for faster project setup, supports integration with GitHub Actions, and provides modular templates for various frameworks. Includes built-in security checks.

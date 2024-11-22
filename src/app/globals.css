@@ -30,3 +30,17 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
 }
 
+.markdown-container ul,
+.markdown-container ol {
+  all: unset; /* Reset any list styles */
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.markdown-container li{
+  margin-bottom: 1rem;
+}
+
+.markdown-container p{
+  margin-bottom: 0.5rem;
+}

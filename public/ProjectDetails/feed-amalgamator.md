@@ -1,0 +1,1 @@
+Feed Amalgamator is a revolutionary platform designed to simplify and enhance your Mastodon usage. If you're tired of juggling multiple accounts across different Mastodon server instances, look no further. Our application empowers users to link various Mastodon accounts seamlessly, creating a unified feed for a more streamlined and enjoyable social media experience
