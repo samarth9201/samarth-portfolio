@@ -156,7 +156,7 @@ export default function Home() {
             />
           </Link>
         </div>
-        <span className="text-xs text-gray-400">LinkedIn and Email are the best way to reach me!😊</span>
+        <span className="text-xs text-gray-400">LinkedIn and Email are the best ways to reach me!😊</span>
       </div>
     </div>
   );
