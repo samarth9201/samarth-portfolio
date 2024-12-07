@@ -56,7 +56,7 @@ export default function Home() {
             priority
           />
           <p className="text-lg sm:text-base mb-4">
-            I am a second-year Master&apos;s student in the Computer Science
+            I recently graduated with Master&apos;s student in the Computer Science
             department at the University of California - San Diego. My
             experience spans across various fields within computer science. At
             present, I am primarily focused on Systems and Security. I have
@@ -84,7 +84,7 @@ export default function Home() {
             I thrive on connecting with new people, exchanging ideas, and
             collaborating. Please feel free to reach out to me on{" "}
             <Link
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/samarthbhadane"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline"
