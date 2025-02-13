@@ -56,8 +56,8 @@ export default function Home() {
             priority
           />
           <p className="text-lg sm:text-base mb-4">
-            I recently graduated with Master&apos;s student in the Computer Science
-            department at the University of California - San Diego. My
+            I am a Software Engineer at <Link href="https://www.eudia.com/">Eudia</Link> and a recent graduate from Master&apos;s in the Computer Science
+            department at the <Link href="https://ucsd.edu/">University of California - San Diego</Link>. My
             experience spans across various fields within computer science. At
             present, I am primarily focused on Systems and Security. I have
             expertise in languages like Go, Java, C/C++, JavaScript, and Python.
