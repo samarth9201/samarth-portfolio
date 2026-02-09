@@ -7,7 +7,7 @@ import { FiMoon, FiSun } from "react-icons/fi";
 const LinkMap = [
   { name: "About", link: "/" },
   { name: "Projects", link: "/projects" },
-  { name: "News", link: "/news" },
+  { name: "Milestones", link: "/milestones" },
   // { name: "Contact", link: "/contact" },
 ];
 

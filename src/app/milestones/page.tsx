@@ -9,7 +9,7 @@ interface NewsItem {
   description: string;
 }
 
-const News = () => {
+const Milestones = () => {
   const [newsData, setNewsData] = useState<NewsItem[]>([]);
   const [visibleIndexes, setVisibleIndexes] = useState<number[]>([]);
   const { colors } = useTheme();
@@ -32,7 +32,7 @@ const News = () => {
         }, index * 200); // Staggered delay for each item
       });
     };
-    document.title = "News | Samarth Bhadane";
+    document.title = "Milestones | Samarth Bhadane";
     fetchData();
   }, []);
 
@@ -46,7 +46,7 @@ const News = () => {
           fontSize: "28px",
         }}
       >
-        News
+        Milestones
       </h2>
       <div
         style={{
@@ -157,4 +157,4 @@ const News = () => {
   );
 };
 
-export default News;
+export default Milestones;
